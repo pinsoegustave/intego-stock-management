@@ -6,10 +6,11 @@ export default function Home() {
     <div className="fixed inset-0 flex items-center justify-center bg-gray-100">
       <div className="bg-white p-8 w-full max-w-md gap-y-10 rounded-lg shadow-lg">
         <div className="text-center mb-12 mt-24">
-          <h2 className="text-xl font-light text-gray-800">
+          <h2 className="text-xl font-light text-gray-800 mb-4">
           3MR STOCK MIS
         </h2>
-        <p>Already have an account? <Link href={''}>Login</Link> </p>
+        <p>Already have an account?
+          <Link href={''} className="text-[#034833] hover:text-green-800 font-light underline"> Login</Link> </p>
         </div>
         <div className="space-y-6">
           {/* Form inputs */}
