@@ -34,6 +34,7 @@ function page() {
             />
         </div>
         {/* Button */}
+        <Link href={'/admin/dashboard'}>
         <div className="pt-4">
             <button
               type="submit"
@@ -41,7 +42,7 @@ function page() {
             >
               Login
             </button>
-          </div>
+          </div></Link>
         </div>
       </div>
     </div>
