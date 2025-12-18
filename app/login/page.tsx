@@ -1,7 +1,7 @@
-import Image from "next/image";
-import Link from "next/link";
+import Link from 'next/link'
+import React from 'react'
 
-export default function Home() {
+function page() {
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-gray-100">
       <div className="bg-white p-8 w-full max-w-md gap-y-10 rounded-lg shadow-lg">
@@ -9,29 +9,12 @@ export default function Home() {
           <h2 className="text-xl font-light text-gray-800 mb-4">
           3MR STOCK MIS
         </h2>
-        <p>Already have an account?
-          <Link href={'/login'} className="text-[#034833] hover:text-green-800 font-light underline"> Login</Link> </p>
+        <p>Don't have an account?
+          <Link href={'/'} className="text-[#034833] hover:text-green-800 font-light underline"> Register</Link> 
+        </p>
         </div>
         <div className="space-y-6">
           {/* Form inputs */}
-          <div>
-            <label className='block'>First Name</label>
-            <input
-            className='bg-[#E5E7EB] w-full px-2 py-2 rounded-md' 
-            type="text" 
-            required
-            placeholder="John"
-            />
-        </div>
-        <div>
-            <label className='block'>Last Name</label>
-            <input
-            className='bg-[#E5E7EB] w-full px-2 py-2 rounded-md' 
-            type="text" 
-            required
-            placeholder="Doe"
-            />
-        </div>
         <div>
             <label className='block'>Email</label>
             <input
@@ -56,11 +39,13 @@ export default function Home() {
               type="submit"
               className="flex mx-auto bg-[#034833] hover:bg-green-800 text-white font-extralight py-3 px-4 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
             >
-              Register
+              Login
             </button>
           </div>
         </div>
       </div>
     </div>
-  );
+  )
 }
+
+export default page
