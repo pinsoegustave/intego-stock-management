@@ -1,9 +1,65 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div>
-      <h1>Page 1 - Login</h1>
+    <div className="fixed inset-0 flex items-center justify-center bg-gray-100">
+      <div className="bg-white p-8 w-full max-w-md gap-y-10 rounded-lg shadow-lg">
+        <div className="text-center mb-12 mt-24">
+          <h2 className="text-xl font-light text-gray-800">
+          3MR STOCK MIS
+        </h2>
+        <p>Already have an account? <Link href={''}>Login</Link> </p>
+        </div>
+        <div className="space-y-6">
+          {/* Form inputs */}
+          <div>
+            <label className='block'>First Name</label>
+            <input
+            className='bg-[#E5E7EB] w-full px-2 py-2 rounded-md' 
+            type="text" 
+            required
+            placeholder="John"
+            />
+        </div>
+        <div>
+            <label className='block'>Last Name</label>
+            <input
+            className='bg-[#E5E7EB] w-full px-2 py-2 rounded-md' 
+            type="text" 
+            required
+            placeholder="Doe"
+            />
+        </div>
+        <div>
+            <label className='block'>Email</label>
+            <input
+            className='bg-[#E5E7EB] w-full px-2 py-2 rounded-md' 
+            type="text" 
+            required
+            placeholder="johndoe@gmail.com"
+            />
+        </div>
+        <div>
+            <label className='block'>Password</label>
+            <input
+            className='bg-[#E5E7EB] w-full px-2 py-2 rounded-md' 
+            type="text" 
+            required
+            placeholder="Enter password"
+            />
+        </div>
+        {/* Button */}
+        <div className="pt-4">
+            <button
+              type="submit"
+              className="flex mx-auto bg-[#034833] hover:bg-green-800 text-white font-extralight py-3 px-4 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+            >
+              Register
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
