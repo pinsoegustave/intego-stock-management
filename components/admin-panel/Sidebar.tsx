@@ -5,9 +5,9 @@ import Image from "next/image";
 
 function Sidebar() {
   return (
-    <div className="bg-red-200 w-75 min-h-screen p-4 shrink-0 shadow-2xl">
+    <div className="w-75 min-h-screen p-4 shrink-0 shadow-2xl">
       <h2 className="font-bold">Stock Management System</h2>
-      <div className="border-2 border-black-100 my-4 lg:flex hidden w-full max-w-125 items-center hover:border-accent/80 focus-within:border-accent/80 transition-colors rounded-lg">
+      <div className="border-2 border-black-100 my-4 lg:flex hidden w-full max-w-125 items-center hover:border-accent/80 focus-within:border-accent/80 transition-colors rounded-lg mb-12">
         <div className="bg-accent text-gray-600 text-[26px] flex items-center justify-center px-2 h-full">
           <BiSearch />
         </div>
@@ -18,10 +18,10 @@ function Sidebar() {
         />
       </div>
       {/* List */}
-        { MENUS.map((menu) => (
-      <div key={menu.href} className="">
-        <ul className="">
-          <div className="flex bg-green-300">
+        { MENUS.map((menu, index) => (
+      <div key={menu.href} className="pb-4">
+        <ul className="block gap-y-10">
+          <div className={`flex items-center p-3 rounded-lg ${index === 0 ? 'bg-[#74E2AF4A]':''} hover:bg-gray-100 transition-colors cursor-pointer`}>
           <Image 
             src={menu.image} 
             alt={menu.title} 
