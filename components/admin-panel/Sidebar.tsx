@@ -5,7 +5,8 @@ import Image from "next/image";
 
 function Sidebar() {
   return (
-    <div className="w-75 min-h-screen p-4 shrink-0 shadow-2xl">
+    <div className="w-75 min-h-screen p-4 shrink-0 shadow-2xl flex flex-col">
+      <div className="flex-1">
       <h2 className="font-bold">Stock Management System</h2>
       <div className="border-2 border-black-100 my-4 lg:flex hidden w-full max-w-125 items-center hover:border-accent/80 focus-within:border-accent/80 transition-colors rounded-lg mb-12">
         <div className="bg-accent text-gray-600 text-[26px] flex items-center justify-center px-2 h-full">
@@ -34,6 +35,35 @@ function Sidebar() {
         </ul>
       </div>
         )) }
+      </div>
+        {/* Separator Line */}
+        <div className="border-t border-gray-200 my-4"></div>
+
+        {/* Down Account */}
+        <div className="flex mx-auto gap-10 items-center pt-4">
+          <div>
+            <Image 
+              src={'/Vector.svg'}
+              alt="account"
+              width={20}
+              height={20}
+              className="h-10 w-10 object-contain"
+            />
+          </div>
+          <div>
+            <h2 className="font-bold">James</h2>
+            <span className="text-gray-700">Admin</span>
+          </div>
+          <div className="hover:bg-gray-300 rounded-full">
+            <Image 
+              src={'/door.svg'}
+              alt="door"
+              width={20}
+              height={20}
+              className="h-10 w-10 object-contain"
+            />
+          </div>
+        </div>
     </div>
   );
 }
