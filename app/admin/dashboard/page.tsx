@@ -5,7 +5,7 @@ export default function page() {
   return (
     <div className='w-full flex'>
         <Sidebar />
-        <p>This is the admin dashboard</p>
+        <h1 className='text-[#101828] text-3xl font-medium leading-9.5'>Welcome back, James</h1>
     </div>
   )
 }
