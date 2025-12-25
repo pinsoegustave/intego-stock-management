@@ -1,33 +1,33 @@
 
 const menus = [
         {
-            title: "Dashboard",
-            icon: <MdDashboard />,
+            title: "Overview",
+            icon: '/Icon.svg',
             href: "/admin/dashboard",
         },
         {
             title: "Products",
-            icon: <RiShoppingCartLine />,
+            icon: '/cart.svg',
             href: "/admin/products",
         },
         {
-            title: "Accounts",
-            icon: <MdManageAccounts />,
+            title: "Supplier",
+            icon: '/people.svg',
             href: "#",
         },
         {
-            title: "Transactions",
-            icon: <GrTransaction />,
+            title: "Category",
+            icon: '/check.svg',
             href: "#",
         },
         {
-            title: "Analytics",
-            icon: <IoAnalytics/>,
+            title: "Stock",
+            icon: '/box.svg',
             href: "#"
         },
         {
-            title: "Setting",
-            icon: <IoSettings />,
+            title: "Settings",
+            icon: '/settings.svg',
             href: "#",
         },
     ];
