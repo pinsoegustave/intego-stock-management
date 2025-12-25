@@ -1,5 +1,7 @@
 import React from "react";
 import { BiSearch } from "react-icons/bi";
+import { MENUS } from "../utils";
+import Image from "next/image";
 
 function Sidebar() {
   return (
@@ -15,6 +17,23 @@ function Sidebar() {
           placeholder="Search"
         />
       </div>
+      {/* List */}
+        { MENUS.map((menu) => (
+      <div key={menu.href} className="">
+        <ul className="">
+          <div className="flex bg-green-300">
+          <Image 
+            src={menu.image} 
+            alt={menu.title} 
+            height={20} 
+            width={20} 
+            className="w-5 h-5 mr-2"
+          />
+          <li key={menu.href} className="" >{menu.title}</li>
+          </div>
+        </ul>
+      </div>
+        )) }
     </div>
   );
 }

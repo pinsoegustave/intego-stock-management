@@ -1,33 +1,33 @@
 
-const menus = [
+export const MENUS = [
         {
             title: "Overview",
-            icon: '/Icon.svg',
+            image: "/Icon.svg",
             href: "/admin/dashboard",
         },
         {
             title: "Products",
-            icon: '/cart.svg',
+            image: "/cart.svg",
             href: "/admin/products",
         },
         {
             title: "Supplier",
-            icon: '/people.svg',
+            image: "/people.svg",
             href: "#",
         },
         {
             title: "Category",
-            icon: '/check.svg',
+            image: "/check.svg",
             href: "#",
         },
         {
             title: "Stock",
-            icon: '/box.svg',
+            image: "/box.svg",
             href: "#"
         },
         {
             title: "Settings",
-            icon: '/settings.svg',
+            image: "/settings.svg",
             href: "#",
         },
     ];
